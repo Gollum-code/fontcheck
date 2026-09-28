@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck (lint)
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: fontcheck self-scan (demo)
+        # fail-on none：源码/许可库中含字体名关键词，自扫描仅作演示，不参与 CI 门禁
+        run: node dist/main.js --no-color --fail-on none .
