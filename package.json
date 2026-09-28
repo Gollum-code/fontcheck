@@ -1,0 +1,40 @@
+{
+  "name": "fontcheck",
+  "version": "0.1.0",
+  "description": "字体许可/商用风险检查 CLI：扫描项目中的字体引用，识别许可类型，评估商用风险，建议开源替代字体，输出报告并支持 CI 退出码。",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "fontcheck": "dist/main.js"
+  },
+  "files": [
+    "dist",
+    "licenses"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/main.ts",
+    "start": "node dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "lint": "npm run typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "fonts",
+    "font",
+    "license",
+    "licensing",
+    "compliance",
+    "cli",
+    "risk"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {}
+}

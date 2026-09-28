@@ -1,0 +1,891 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-27",
+  "description": "字库：字体名/别名 → 许可类型 + 商用风险 + 来源标注 + 开源替代建议。数据为人工整理，仅供参考，正式商用前请以字体版权方官网许可为准。",
+  "licenseCodes": {
+    "OFL": "SIL Open Font License 1.1 (开源可商用)",
+    "Apache2": "Apache License 2.0 (开源可商用)",
+    "MIT": "MIT License (开源可商用)",
+    "free": "免费商用授权 (非开源)",
+    "proprietary": "商业专有授权 (需购买/受限)",
+    "system": "系统内置字体 (随系统授权)"
+  },
+  "riskLevels": {
+    "ok": "可商用",
+    "attribution": "可商用需归属",
+    "restricted": "禁止/受限商用",
+    "unknown": "未知需自查"
+  },
+  "fonts": [
+    {
+      "name": "Microsoft YaHei",
+      "aliases": ["微软雅黑", "雅黑", "MS YaHei", "Microsoft YaHei UI", "msyh"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "随 Windows 授权，仅限在 Windows 环境渲染显示；禁止作为 Web 字体嵌入网页，禁止将字体文件随商业产品再分发。设计导出位图可用，但商用项目请优先开源替代。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/microsoft-yahei",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC", "HarmonyOS Sans SC", "Alibaba PuHuiTi"]
+    },
+    {
+      "name": "Microsoft YaHei UI",
+      "aliases": ["微软雅黑 UI", "Microsoft YaHei UI Semibold"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "微软雅黑 UI 变体，规则同微软雅黑：仅限 Windows 环境，禁止嵌入/再分发。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/microsoft-yahei",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC", "HarmonyOS Sans SC"]
+    },
+    {
+      "name": "PingFang SC",
+      "aliases": ["苹方", "苹方-简", "PingFang HK", "PingFang TC"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Apple 系统内置字体，随 macOS/iOS 授权。禁止在非 Apple 平台使用/再分发/嵌入 Web 字体，禁止脱离系统单独商用。",
+      "source": "https://developer.apple.com/fonts/",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC", "HarmonyOS Sans SC", "Alibaba PuHuiTi"]
+    },
+    {
+      "name": "Heiti SC",
+      "aliases": ["黑体-简", "STHeiti", "华文黑体", "黑体"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Apple/华文黑体系系统字体，禁止再分发与商用嵌入。",
+      "source": "https://developer.apple.com/fonts/",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC"]
+    },
+    {
+      "name": "Arial",
+      "aliases": ["Arial Black", "Arial Narrow", "Arial Rounded", "ArialMT", "Arial-BoldMT", "Arial Black MT"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "Windows/macOS 系统内置（Linotype/Monotype 授权），设计导出可用；禁止将字体文件再分发或作为 Web 字体嵌入到需授权的产品。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/arial",
+      "alternatives": ["Noto Sans", "Inter", "Roboto"]
+    },
+    {
+      "name": "Helvetica",
+      "aliases": ["Helvetica Neue", "Helvetica Now"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随 macOS/iOS 内置；单独商用需 Monotype/Linotype 授权，禁止再分发与嵌入。",
+      "source": "https://developer.apple.com/fonts/",
+      "alternatives": ["Noto Sans", "Inter", "Roboto"]
+    },
+    {
+      "name": "Times New Roman",
+      "aliases": ["Times", "Times Roman", "TimesNR", "TimesNewRomanPSMT", "TimesNewRomanPS"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随系统内置；单独商用需 Monotype 授权，禁止再分发与 Web 嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/times-new-roman",
+      "alternatives": ["Noto Serif", "Source Serif 4", "Libre Caslon"]
+    },
+    {
+      "name": "Calibri",
+      "aliases": ["Calibri Light", "Calibri Light Italic"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "Microsoft Office 随附，禁止再分发与嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/calibri",
+      "alternatives": ["Noto Sans", "Inter", "Roboto"]
+    },
+    {
+      "name": "Segoe UI",
+      "aliases": ["Segoe UI Semibold", "Segoe UI Light", "Segoe UI Variable"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随 Windows 内置，禁止再分发与 Web 嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/segoe-ui",
+      "alternatives": ["Noto Sans", "Inter", "Roboto"]
+    },
+    {
+      "name": "Georgia",
+      "aliases": ["Georgia Pro"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随系统内置，禁止再分发与嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/georgia",
+      "alternatives": ["Source Serif 4", "Noto Serif", "Lora"]
+    },
+    {
+      "name": "Verdana",
+      "aliases": ["Verdana Pro"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随系统内置，禁止再分发与嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/verdana",
+      "alternatives": ["Noto Sans", "Open Sans"]
+    },
+    {
+      "name": "Tahoma",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": "随系统内置，禁止再分发与嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/tahoma",
+      "alternatives": ["Noto Sans", "Open Sans"]
+    },
+    {
+      "name": "FangSong",
+      "aliases": ["仿宋", "仿宋体", "FangSong GB2312", "仿宋_GB2312", "中易仿宋"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Windows 内置仿宋（中易），商用再分发受限。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/fangsong",
+      "alternatives": ["LXGW WenKai", "Noto Serif SC"]
+    },
+    {
+      "name": "SimSun",
+      "aliases": ["宋体", "SimSun-ExtB", "NSimSun", "中易宋体"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Windows 内置宋体（中易），商用再分发受限。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/simsun",
+      "alternatives": ["Noto Serif SC", "Source Han Serif SC"]
+    },
+    {
+      "name": "SimHei",
+      "aliases": ["黑体"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Windows 内置黑体（中易），商用再分发受限。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/simhei",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC"]
+    },
+    {
+      "name": "KaiTi",
+      "aliases": ["楷体", "楷体_GB2312", "KaiTi_GB2312"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": "Windows 内置楷体（中易），商用再分发受限。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/kaiti",
+      "alternatives": ["LXGW WenKai", "Noto Serif SC"]
+    },
+    {
+      "name": "FZ LanTingHei",
+      "aliases": ["方正兰亭黑", "方正黑体", "方正简体", "方正圆体"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "方正字库商业字体，商用必须购买授权（个人学习免费）。",
+      "source": "https://www.foundertype.com",
+      "alternatives": ["Noto Sans SC", "Source Han Sans SC", "Alibaba PuHuiTi"]
+    },
+    {
+      "name": "FZ Song",
+      "aliases": ["方正宋体", "方正小标宋", "方正书宋", "方正报宋"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "方正字库商业字体，商用必须购买授权。",
+      "source": "https://www.foundertype.com",
+      "alternatives": ["Noto Serif SC", "Source Han Serif SC"]
+    },
+    {
+      "name": "FZ ZongYi",
+      "aliases": ["方正综艺", "方正综艺体", "方正粗黑", "方正胖娃", "方正喵呜体"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "方正字库商业展示字体，商用必须购买授权。",
+      "source": "https://www.foundertype.com",
+      "alternatives": ["Smiley Sans", "ZCOOL Happy", "Alibaba PuHuiTi"]
+    },
+    {
+      "name": "HY QiHei",
+      "aliases": ["汉仪旗黑", "汉仪黑体", "汉仪楷书", "汉仪仿宋", "汉仪菱心体", "汉仪尚巍手书"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "汉仪字库商业字体，商用必须购买授权。",
+      "source": "https://www.hanyi.com.cn",
+      "alternatives": ["Noto Sans SC", "HarmonyOS Sans SC", "LXGW WenKai"]
+    },
+    {
+      "name": "DynaFont",
+      "aliases": ["华康丽黑", "华康中黑体", "华康少女体", "华康娃娃体", "DynaLight"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "华康 (DynaFont) 商业字体，商用必须购买授权。",
+      "source": "https://www.dynacw.com.cn",
+      "alternatives": ["Noto Sans SC", "Noto Serif SC"]
+    },
+    {
+      "name": "Arphic",
+      "aliases": ["文鼎细黑", "文鼎明体", "文鼎楷体", "文鼎粗黑", "文鼎立体"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "文鼎 (Arphic) 商业字体，商用必须购买授权。",
+      "source": "https://www.arphic.com",
+      "alternatives": ["Noto Sans SC", "Noto Serif SC"]
+    },
+    {
+      "name": "STFonts",
+      "aliases": ["华文细黑", "华文宋体", "华文楷体", "华文仿宋", "华文中宋", "华文隶书", "华文行楷", "STSong", "STXihei", "STKaiti", "STFangsong", "STZhongsong"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "华文字库商业字体，商用必须购买授权。",
+      "source": "https://www.huawen.com.cn",
+      "alternatives": ["Noto Sans SC", "Noto Serif SC"]
+    },
+    {
+      "name": "造字工房",
+      "aliases": ["造字工房悦黑", "造字工房劲黑", "造字工房尚黑", "MxFont"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "造字工房商业字体，商用必须购买授权。",
+      "source": "https://www.maketype.com",
+      "alternatives": ["Noto Sans SC", "Smiley Sans"]
+    },
+    {
+      "name": "长城/汉鼎/腾祥/百软",
+      "aliases": ["长城楷体", "汉鼎字体", "腾祥青云", "百软名流", "创艺字体"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": "传统中文字库（长城/汉鼎/腾祥/百软/创艺等）均需购买商业授权。",
+      "source": "",
+      "alternatives": ["Noto Sans SC", "Noto Serif SC", "LXGW WenKai"]
+    },
+    {
+      "name": "Source Han Sans",
+      "aliases": ["思源黑体", "思源黑体 CN", "思源黑体 TC", "思源黑体 HK", "Source Han Sans SC", "Source Han Sans CN", "Source Han Sans TC", "Source Han Sans HK", "SourceHanSansSC", "SourceHanSansCN"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Adobe 与 Google 合作开发，SIL OFL 1.1，可免费商用、可嵌入、可再分发（需保留许可声明）。",
+      "source": "https://github.com/adobe-fonts/source-han-sans",
+      "alternatives": []
+    },
+    {
+      "name": "Source Han Serif",
+      "aliases": ["思源宋体", "思源宋体 CN", "Source Han Serif SC", "Source Han Serif CN", "SourceHanSerifSC", "SourceHanSerifCN"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "SIL OFL 1.1，可免费商用、可嵌入、可再分发。",
+      "source": "https://github.com/adobe-fonts/source-han-serif",
+      "alternatives": []
+    },
+    {
+      "name": "Noto Sans CJK",
+      "aliases": ["Noto Sans SC", "Noto Sans TC", "Noto Sans JP", "Noto Sans KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "思源黑体"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Noto CJK，SIL OFL 1.1，可免费商用。",
+      "source": "https://github.com/notofonts/noto-cjk",
+      "alternatives": []
+    },
+    {
+      "name": "Noto Serif CJK",
+      "aliases": ["Noto Serif SC", "Noto Serif TC", "Noto Serif CJK SC", "思源宋体"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Noto CJK Serif，SIL OFL 1.1，可免费商用。",
+      "source": "https://github.com/notofonts/noto-cjk",
+      "alternatives": []
+    },
+    {
+      "name": "Alibaba PuHuiTi",
+      "aliases": ["阿里巴巴普惠体", "普惠体", "AlibabaPuHuiTi", "阿里巴巴普惠体 2.0"],
+      "license": "free",
+      "category": "open",
+      "risk": "ok",
+      "note": "阿里巴巴官方免费商用字体（免费商用授权，非开源），可免费用于商业场景。",
+      "source": "https://www.alibabafonts.com/",
+      "alternatives": []
+    },
+    {
+      "name": "HarmonyOS Sans",
+      "aliases": ["鸿蒙字体", "HarmonyOS Sans SC", "HarmonyOS Sans TC"],
+      "license": "free",
+      "category": "open",
+      "risk": "ok",
+      "note": "华为官方免费商用字体，可用于商业项目。",
+      "source": "https://developer.huawei.com/consumer/cn/design/",
+      "alternatives": []
+    },
+    {
+      "name": "ZCOOL",
+      "aliases": ["站酷高端黑", "站酷酷黑", "站酷快乐体", "站酷文艺体", "站酷小薇LOGO体", "ZCOOL KuaiLe", "ZCOOL XiaoWei"],
+      "license": "free",
+      "category": "open",
+      "risk": "ok",
+      "note": "站酷免费字体系列，免费商用（禁止直接出售字体文件本身）。",
+      "source": "https://www.zcool.com.cn",
+      "alternatives": []
+    },
+    {
+      "name": "Smiley Sans",
+      "aliases": ["得意黑", "Smiley Sans Oblique"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "得意黑，SIL OFL，开源可商用展示字体。",
+      "source": "https://github.com/atelier-anchor/smiley-sans",
+      "alternatives": []
+    },
+    {
+      "name": "LXGW WenKai",
+      "aliases": ["霞鹜文楷", "霞鹜文楷 GB", "LXGWWenKai", "LXGW WenKai GB"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "霞鹜文楷，SIL OFL，开源可商用楷体精灵。",
+      "source": "https://github.com/lxgw/LxgwWenKai",
+      "alternatives": []
+    },
+    {
+      "name": "南京木棉花/庞门正道",
+      "aliases": ["庞门正道标题体", "庞门正道粗书体", "庞门正道细线体"],
+      "license": "free",
+      "category": "open",
+      "risk": "ok",
+      "note": "免费商用授权，网络来源较多请核验授权声明。",
+      "source": "https://www.zcool.com.cn",
+      "alternatives": ["Smiley Sans", "ZCOOL KuaiLe"]
+    },
+    {
+      "name": "优设标题黑",
+      "aliases": ["优设黑体", "优设标题字体"],
+      "license": "free",
+      "category": "open",
+      "risk": "ok",
+      "note": "免费商用（优设网发布）。",
+      "source": "",
+      "alternatives": ["Smiley Sans", "ZCOOL KuaiLe"]
+    },
+    {
+      "name": "Roboto",
+      "aliases": ["Roboto Mono"],
+      "license": "Apache2",
+      "category": "open",
+      "risk": "ok",
+      "note": "Google 出品，Apache 2.0，可免费商用。",
+      "source": "https://fonts.google.com/specimen/Roboto",
+      "alternatives": []
+    },
+    {
+      "name": "Open Sans",
+      "aliases": ["Open Sans Condensed"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "Google Fonts，SIL OFL，可免费商用。",
+      "source": "https://fonts.google.com/specimen/Open+Sans",
+      "alternatives": []
+    },
+    {
+      "name": "Noto Sans",
+      "aliases": ["Noto Sans Display"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "Google Noto，SIL OFL，可免费商用。",
+      "source": "https://github.com/notofonts/noto-fonts",
+      "alternatives": []
+    },
+    {
+      "name": "Noto Serif",
+      "aliases": ["Noto Serif Display"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": "Google Noto Serif，SIL OFL，可免费商用。",
+      "source": "https://github.com/notofonts/noto-fonts",
+      "alternatives": []
+    },
+    {
+      "name": "Inter",
+      "aliases": ["Inter Tight", "Inter Var"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " 知名 UI 字体，SIL OFL，可免费商用。",
+      "source": "https://github.com/rsms/inter",
+      "alternatives": []
+    },
+    {
+      "name": "Lato",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Lato",
+      "alternatives": []
+    },
+    {
+      "name": "Poppins",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL，几何无衬线。",
+      "source": "https://fonts.google.com/specimen/Poppins",
+      "alternatives": []
+    },
+    {
+      "name": "Montserrat",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL，几何无衬线，常作 Futura 开源替代。",
+      "source": "https://fonts.google.com/specimen/Montserrat",
+      "alternatives": []
+    },
+    {
+      "name": "Source Sans 3",
+      "aliases": ["Source Sans Pro", "Source Sans 3"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Adobe 开源无衬线，SIL OFL。",
+      "source": "https://github.com/adobe-fonts/source-sans",
+      "alternatives": []
+    },
+    {
+      "name": "Source Serif 4",
+      "aliases": ["Source Serif", "Source Serif Pro"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Adobe 开源衬线，SIL OFL。",
+      "source": "https://github.com/adobe-fonts/source-serif",
+      "alternatives": []
+    },
+    {
+      "name": "JetBrains Mono",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " JetBrains 出品等宽字体，SIL OFL。",
+      "source": "https://github.com/JetBrains/JetBrainsMono",
+      "alternatives": []
+    },
+    {
+      "name": "Fira Code",
+      "aliases": ["Fira Mono"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " 等宽编程字体，SIL OFL。",
+      "source": "https://github.com/tonsky/FiraCode",
+      "alternatives": []
+    },
+    {
+      "name": "Source Code Pro",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Adobe 开源等宽字体，SIL OFL。",
+      "source": "https://github.com/adobe-fonts/source-code-pro",
+      "alternatives": []
+    },
+    {
+      "name": "Nunito",
+      "aliases": ["Nunito Sans"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Nunito",
+      "alternatives": []
+    },
+    {
+      "name": "Raleway",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Raleway",
+      "alternatives": []
+    },
+    {
+      "name": "Oswald",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Oswald",
+      "alternatives": []
+    },
+    {
+      "name": "Bebas Neue",
+      "aliases": ["Bebas"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " 展示字体，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Bebas+Neue",
+      "alternatives": []
+    },
+    {
+      "name": "Playfair Display",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，衬线展示字体，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Playfair+Display",
+      "alternatives": []
+    },
+    {
+      "name": "Merriweather",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Merriweather",
+      "alternatives": []
+    },
+    {
+      "name": "Lora",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Lora",
+      "alternatives": []
+    },
+    {
+      "name": "DM Sans",
+      "aliases": ["DM Mono"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/DM+Sans",
+      "alternatives": []
+    },
+    {
+      "name": "Work Sans",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Work+Sans",
+      "alternatives": []
+    },
+    {
+      "name": "Manrope",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Manrope",
+      "alternatives": []
+    },
+    {
+      "name": "Space Grotesk",
+      "aliases": ["Space Mono"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Space+Grotesk",
+      "alternatives": []
+    },
+    {
+      "name": "Ubuntu",
+      "aliases": ["Ubuntu Mono"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Ubuntu 官方字体，SIL OFL。",
+      "source": "https://github.com/canonical/ubuntu-fonts",
+      "alternatives": []
+    },
+    {
+      "name": "Quicksand",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Quicksand",
+      "alternatives": []
+    },
+    {
+      "name": "Comfortaa",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Comfortaa",
+      "alternatives": []
+    },
+    {
+      "name": "Pacifico",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，手写展示，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Pacifico",
+      "alternatives": []
+    },
+    {
+      "name": "Lobster",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，手写展示，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Lobster",
+      "alternatives": []
+    },
+    {
+      "name": "Dancing Script",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，手写体，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Dancing+Script",
+      "alternatives": []
+    },
+    {
+      "name": "Caveat",
+      "aliases": [],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google Fonts，手写体，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Caveat",
+      "alternatives": []
+    },
+    {
+      "name": "Font Awesome",
+      "aliases": ["FontAwesome", "Font Awesome 6 Free", "Font Awesome 6 Brands"],
+      "license": "free",
+      "category": "open",
+      "risk": "attribution",
+      "note": " 图标字体。CC BY 4.0（免费版需署名），Pro 版需购买。",
+      "source": "https://fontawesome.com/license",
+      "alternatives": ["Material Symbols", "Tabler Icons", "Bootstrap Icons"]
+    },
+    {
+      "name": "Material Icons",
+      "aliases": ["Material Symbols", "Material Icons Outlined", "Material Symbols Outlined", "MaterialIcons-Regular"],
+      "license": "Apache2",
+      "category": "open",
+      "risk": "ok",
+      "note": " Google 图标字体，Apache 2.0。",
+      "source": "https://fonts.google.com/icons",
+      "alternatives": []
+    },
+    {
+      "name": "Bootstrap Icons",
+      "aliases": [],
+      "license": "MIT",
+      "category": "open",
+      "risk": "ok",
+      "note": " MIT 许可图标字体。",
+      "source": "https://github.com/twbs/icons",
+      "alternatives": []
+    },
+    {
+      "name": "Ionicons",
+      "aliases": [],
+      "license": "MIT",
+      "category": "open",
+      "risk": "ok",
+      "note": " MIT 许可图标集。",
+      "source": "https://github.com/ionic-team/ionicons",
+      "alternatives": []
+    },
+    {
+      "name": "Tabler Icons",
+      "aliases": [],
+      "license": "MIT",
+      "category": "open",
+      "risk": "ok",
+      "note": " MIT 许可图标集。",
+      "source": "https://github.com/tabler/tabler-icons",
+      "alternatives": []
+    },
+    {
+      "name": "Feather Icons",
+      "aliases": [],
+      "license": "MIT",
+      "category": "open",
+      "risk": "ok",
+      "note": " MIT 许可图标集。",
+      "source": "https://github.com/feathericons/feather",
+      "alternatives": []
+    },
+    {
+      "name": "Futura",
+      "aliases": ["Futura PT", "Futura XBlk"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": " Monotype 商业字体，商用需授权。",
+      "source": "https://www.monotype.com/fonts/futura",
+      "alternatives": ["Montserrat", "Poppins", "Inter"]
+    },
+    {
+      "name": "Proxima Nova",
+      "aliases": ["Proxima Soft"],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": " Mark Simonson 商业字体，商用需购买授权。",
+      "source": "https://www.marksimonson.com/fonts/view/proxima-nova",
+      "alternatives": ["Inter", "Noto Sans", "Work Sans"]
+    },
+    {
+      "name": "Gilroy",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": " 商业展示字体（常见于网络媒体下载，请勿无授权商用）。",
+      "source": "",
+      "alternatives": ["Inter", "Manrope", "Montserrat"]
+    },
+    {
+      "name": "Gotham",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "commercial",
+      "risk": "restricted",
+      "note": " Hoefler&Co 商业字体，商用需授权。",
+      "source": "https://www.typography.com/fonts/gotham",
+      "alternatives": ["Montserrat", "Inter"]
+    },
+    {
+      "name": "PingFang HK",
+      "aliases": ["苹方-繁"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "restricted",
+      "note": " Apple 苹方繁体变体，同苹方许可规则。",
+      "source": "https://developer.apple.com/fonts/",
+      "alternatives": ["Noto Sans TC", "Source Han Sans TC"]
+    },
+    {
+      "name": "Zapf Dingbats",
+      "aliases": ["ZapfDingbats", "ITC Zapf Dingbats"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " PDF 内置标准字体，随系统授权。",
+      "source": "",
+      "alternatives": ["Noto Emoji", "Material Symbols"]
+    },
+    {
+      "name": "Symbol",
+      "aliases": ["SymbolMT"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " Apple/Microsoft 内置符号字体。",
+      "source": "",
+      "alternatives": ["Material Symbols", "Noto Symbols"]
+    },
+    {
+      "name": "Courier New",
+      "aliases": ["Courier", "Courier New Bold", "CourierNewPSMT", "CourierNewPS"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随系统内置等宽字体，禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/courier-new",
+      "alternatives": ["JetBrains Mono", "Fira Code", "Source Code Pro"]
+    },
+    {
+      "name": "Consolas",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随 Windows 内置等宽字体，禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/consolas",
+      "alternatives": ["JetBrains Mono", "Fira Code", "Source Code Pro"]
+    },
+    {
+      "name": "Palatino",
+      "aliases": ["Palatino Linotype", "Palatino Linotype Bold"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随系统内置（Linotype），禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/palatino-linotype",
+      "alternatives": ["Source Serif 4", "Lora"]
+    },
+    {
+      "name": "Century Gothic",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随系统内置，禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/century-gothic",
+      "alternatives": ["Montserrat", "Poppins"]
+    },
+    {
+      "name": "Open Sans Condensed",
+      "aliases": ["Open Sans Narrow"],
+      "license": "OFL",
+      "category": "open",
+      "risk": "ok",
+      "note": " 同 Open Sans，SIL OFL。",
+      "source": "https://fonts.google.com/specimen/Open+Sans",
+      "alternatives": []
+    },
+    {
+      "name": "Impact",
+      "aliases": [],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随系统内置展示字体，禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/impact",
+      "alternatives": ["Bebas Neue", "Anton"]
+    },
+    {
+      "name": "Franklin Gothic",
+      "aliases": ["Franklin Gothic Medium", "Franklin Gothic Book"],
+      "license": "proprietary",
+      "category": "system",
+      "risk": "ok",
+      "note": " 随系统内置（Monotype），禁止再分发/嵌入。",
+      "source": "https://learn.microsoft.com/en-us/typography/font-list/franklin-gothic",
+      "alternatives": ["Inter", "Montserrat"]
+    }
+  ]
+}
